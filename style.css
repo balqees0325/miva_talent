@@ -89,13 +89,18 @@ h4 {
   background: #1b1b1b;
   height: 100vh;
   transition: all 0.5s ease-in-out;
-  position: relative;
+  position: fixed;
   line-height: 40px;
 }
- {
+.nav-logo {
   width: 100%;
 }
+.nav-logo span {
+  color: #f6d6d6;
+  font-size: 20px;
+}
 .nav-ul {
+  position: relative;
   width: 100%;
   color: #eee;
 }
