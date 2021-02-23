@@ -1,4 +1,49 @@
 'use strict';
+// toggle hamburger menu;
+const hamburger = document.getElementById('hamburger');
+const navUl = document.getElementById('nav-ul');
+
+const showNav = () => {
+  if(hamburger.src.endsWith('icon-hamburger.svg')) {
+    hamburger.src = './icon-close.svg';
+  } else {
+    hamburger.src = './icon-hamburger.svg';
+  }
+
+  navUl.classList.toggle('show');
+}
+hamburger.addEventListener('click', showNav);
+
+// side navbar js
+let toggle1 = document.querySelector('.toggle1');
+let toggle2 = document.querySelector('.toggle2');
+let menu1 = document.querySelector('#subMenu1');
+let menu2 = document.querySelector('#subMenu2');
+let menu3 = document.querySelector('#subMenu3');
+let menu4 = document.querySelector('#subMenu4');
+let menu5 = document.querySelector('#subMenu5');
+let menu6 = document.querySelector('#subMenu6');
+let arrow1 = document.querySelector('#downArrow');
+let arrow2 = document.querySelector('#leftArrow1');
+
+arrow1.addEventListener('click', ()=> {
+  if(menu1.style.display === 'block' 
+  || menu2.style.display === 'block' 
+  || menu3.style.display === 'block') {
+    menu1.style.display === 'none';
+    menu2.style.display === 'none';
+    menu3.style.display === 'none';
+  }
+  else {
+    menu1.style.display === 'block';
+    menu2.style.display === 'block';
+    menu3.style.display === 'block';
+  }
+});
+
+
+// 
+
 let ctx = document.getElementById('lineChart');
 let lineChart = new Chart(ctx, {
   type: 'line',

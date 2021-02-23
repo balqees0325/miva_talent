@@ -70,6 +70,7 @@ h4 {
   color: #444;
 }
 .nav-container {
+  display: none;
   width: 200px;
   background: #1b1b1b;
   height: 100vh;
@@ -94,19 +95,23 @@ h4 {
   padding-left: 35px;
   background: rgba(17, 16, 16, 0.596);
   color: #eee;
-  box-shadow: 1px 1px 1px black;
+  border-top: 1px solid rgba(255,255,255, 0.05);
   border-bottom: 2px solid black
 }
 .nav-ul li a {
   color: #eee;
   text-decoration: none;
 }
+.nav-ul li:focus {
+  background: #444;
+  border: 4px solid red;
+}
 .left {
   position: absolute;
   top: 35%;
   left: 10px;
   color: #eee;
-  /* padding-left:5px; */
+  cursor: pointer;
 }
 .right  {
   position: absolute;
@@ -114,10 +119,19 @@ h4 {
   top: 35%;
   font-size: 16px;
   color: #eee;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.nav-ul ul li {
+.list1 #subMenu1, 
+.list1 #subMenu2,
+.list1 #subMenu3, 
+.list2 #subMenu4,
+.list2 #subMenu5,
+.list2 #subMenu6 {
   display: none;
+  cursor:pointer;
+  background: rgb(31, 30, 30);
 }
 
 /* side navbar style end */
@@ -204,4 +218,8 @@ canvas {
   display: grid;
   grid-template-columns: 1fr;
   }
+}
+
+.nav-container .show {
+  display: block;
 }
