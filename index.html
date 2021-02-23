@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIVA_TALENT TASK</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- fontawesome kit code -->
+  <script src="https://kit.fontawesome.com/452c25fd08.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+     
+    <section class="section1">
+      <div class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="" alt="">
+          <span>BangoDash</span>
+        </div>
+          <h4>MAIN NAVIGATION</h4>
+          <ul class="nav-ul">
+          <li class="toggle1"><i class="fas fa-home left"></i><a href="#">Dashboard<i class="fas fa-angle-down right"></i></a></i>
+          <ul class="listUl">
+           <li id="subMenu1"><a href="">Dashboard v1</a></li>
+           <li id="subMenu2"><a href="">Dashboard v2</a></li>
+           <li id="subMenu3"><a href="">Dashboard v3</a></li>
+          </ul>
+          </li>
+          <li class="toggle2"><i class="fas fa-border-all left"></i><a href="#">UI Elements<i class="fas fa-angle-down right"></i></a>
+            <ul class="listUl">
+           <li id="subMenu4"><a href="">Element v1</a></li>
+           <li id="subMenu5"><a href="">Element v2</a></li>
+           <li id="subMenu6"><a href="">Element v3</a></li>
+          </ul>
+          </li>
+          <li><i class="far fa-calendar-alt left"></i><a href="#">Calender</a></li>
+          <li><i class="far fa-envelope left"></i><a href="#">Mailbox</a></li>
+          <li class="toggle3"><i class="fab fa-medrt left"></i><a href="#">Components<i class="fas fa-angle-left right"></i></a>
+          </li>
+          <li class="toggle4"><i class="fas fa-file-signature left"></i><a href="#">Form<i class="fas fa-angle-left right"></i></a>
+          </li>
+          <li class="toggle5"><i class="fas fa-fire left"></i><a href="#">UI Icons<i class="fas fa-angle-left right"></i></a>
+          </li>
+          <li class="toggle6"><i class="far fa-sticky-note left"></i><a href="#">Widgets<i class="fas fa-angle-left right"></i></a>
+          </li>
+          <li class="toggle7"><i class="fas fa-border-all left"></i><a href="#">Tables<i class="fas fa-angle-left right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="section2">
+      <div class="left-nav">
+      <nav>
+        <img class="hamburger" id="hamburger" src="./icon-hamburger.svg" alt="">
+      </nav>
+      <form >
+        <div class="search">
+          <input type="search" name="search" 
+          class="search" id="search" placeholder="Enter keyword">
+        <i class="fas fa-search"></i>
+        </div>
+      </form>
+      </div>
+      <div class="right-nav">
+        <i class="far fa-envelope-open" class="envelop"></i>
+       <i class="far fa-bell" class="bell"></i>
+        <img class="images" src="map.jpg" alt="">
+        <img class="images" src="avatar-ali.png" alt="">
+      </div>
+    </div>
+
+    <!-- Navbar -->
+   <!-- <div class="navbar">
+   <div class="nav-container">
+   <nav class="second-nav" id="second-nav">
+      
+      <ul >
+        
+      </ul>
+      
+    </nav>
+    <div class="nav">
+    </div>
+   </div>
+  </div> -->
+    <div class="cards">
+      <div class="orders">
+        <div class="text">
+          <h2>2050</h2>
+          <p>TOtal Orders</p>
+        </div>
+          <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="expenses">
+        <div class="text">
+          <h2>3250</h2>
+          <p>TOtal Expenses</p>
+        </div>
+          <i class="fas fa-wallet"></i>
+      </div>
+      <div class="revenue">
+        <div class="text">
+          <h2>87.5%</h2>
+          <p>TOtal Revenue</p>
+        </div>
+          <i class="fab fa-codiepie"></i>
+      </div>
+      <div class="user">
+        <div class="text">
+          <h2>2550</h2>
+          <p>New Users</p>
+        </div>
+          <i class="far fa-user"></i>
+      </div>
+    </div>
+    <div class="row mx-2">
+      <div class="col-lg-8 col-md-6 col-sm-12">
+        <div class="linechart">
+      <h3 class="text-left">Product Sales</h3>
+      <i class="fas fa-ellipsis-h"></i>
+      <canvas id="lineChart"></canvas>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="barchart">
+        <h3 class="text-left">Top Selling Caategories</h3>
+      <i class="fas fa-ellipsis-h"></i>
+      <canvas id="barChart"></canvas>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

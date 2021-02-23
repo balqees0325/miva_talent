@@ -1,0 +1,207 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+  background-color: #6cb2eb;
+}
+/* navbar style */
+.nav-ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-image:linear-gradient(to right, rgb(207, 7, 94),rgb(235, 29, 43), rgba(235, 89, 22, 0.863));
+  width: 100%;
+} 
+.left-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  width: 250px;
+  border-radius: 25px;
+  margin: 8px;
+  border: none;
+  padding-left: 10px; 
+}
+.left-nav i {
+  position: absolute;
+  font-size: 12px;
+  color: rgb(153, 150, 150);
+  top: 25px;
+  right: 10px;
+}
+.right-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.right-nav i, .right-nav img{
+  padding: 6px;
+}
+.images {
+  width: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 25px;
+}
+
+.hamburger {
+  display: flex;
+  padding: 10px;
+  border-radius: 4px;
+  color:#fff;
+  border: 2px solid white;
+}
+/* side navbar style */
+h4 {
+  font-size: 14px;
+  color: #444;
+}
+.nav-container {
+  width: 200px;
+  background: #1b1b1b;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  line-height: 40px;
+}
+.nav-logo {
+  width: 100%;
+}
+.nav-ul {
+  width: 100%;
+  color: #eee;
+}
+
+.nav-ul li {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  line-height: 44px;
+  position: relative;
+  padding-left: 35px;
+  background: rgba(17, 16, 16, 0.596);
+  color: #eee;
+  box-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid black
+}
+.nav-ul li a {
+  color: #eee;
+  text-decoration: none;
+}
+.left {
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  color: #eee;
+  /* padding-left:5px; */
+}
+.right  {
+  position: absolute;
+  right: 15px;
+  top: 35%;
+  font-size: 16px;
+  color: #eee;
+}
+
+.nav-ul ul li {
+  display: none;
+}
+
+/* side navbar style end */
+.cards {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.orders {
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(to top right, rgb(29,221,217), rgb(87, 131, 232));
+  margin: 20px;
+  padding: 20px;
+   border-radius: 8px;
+  box-shadow: 0px 0px 1px;
+}
+.expenses {
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(to top right, rgb(246, 85, 156), rgb(253,112,122));
+  margin: 20px;
+  padding: 20px;
+   border-radius: 8px;
+  box-shadow: 0px 0px 1px;
+}
+.revenue {
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(to top right, rgb(65, 225,151), rgb(59,181,179));
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px;
+}
+.user {
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(to top right, rgb(255,206,66), rgb(255,140,85));
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px;
+}
+.cards i {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  font-size: 40px;
+}
+.col {
+   position: relative;
+}
+.linechart, .barchart {
+  background-color: #fff;
+  box-shadow: 3px 3px 7px;
+  border-radius: 6px;
+  margin-top: 40px;
+}
+.linechart i, .barchart i {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+}
+h3 {
+  padding: 20px;
+  border-bottom: 2px solid #eee;
+  font-size: 20px;
+}
+canvas {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 568px) {
+  .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  }
+}
