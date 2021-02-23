@@ -86,10 +86,9 @@ let barChart = new Chart(ctex, {
           option: {
           scales: {
           yAxes: [{
-            // ticks: {
-            //   beginAtZero: false
-            // }
-            min: 20
+            ticks: {
+              beginAtZero: true
+            }
           }]
         }
       }             
