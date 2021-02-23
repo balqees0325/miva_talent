@@ -15,8 +15,8 @@ const showNav = () => {
 hamburger.addEventListener('click', showNav);
 
 // side navbar js
-let toggle1 = document.querySelector('.toggle1');
-let toggle2 = document.querySelector('.toggle2');
+let toggle1 = document.querySelector('#toggle1');
+let toggle2 = document.querySelector('#toggle2');
 let menu1 = document.querySelector('#subMenu1');
 let menu2 = document.querySelector('#subMenu2');
 let menu3 = document.querySelector('#subMenu3');
@@ -26,13 +26,14 @@ let menu6 = document.querySelector('#subMenu6');
 let arrow1 = document.querySelector('#downArrow');
 let arrow2 = document.querySelector('#leftArrow1');
 
-arrow1.addEventListener('click', ()=> {
+toggle1.addEventListener('click', ()=> {
   if(menu1.style.display === 'block' 
   || menu2.style.display === 'block' 
   || menu3.style.display === 'block') {
     menu1.style.display === 'none';
     menu2.style.display === 'none';
     menu3.style.display === 'none';
+    arrow1.style.transform = 'rotate(0deg)';
   }
   else {
     menu1.style.display === 'block';
