@@ -224,11 +224,17 @@ ul #subMenu6 {
   box-shadow: 3px 3px 7px;
   border-radius: 6px;
   margin-top: 40px;
+  line-height: 2;
 }
-.linechart i, .barchart i {
+.linechart i {
   position: absolute;
   top: 60px;
   right: 40px;
+}
+ .barchart i {
+  position: absolute;
+  top: 60px;
+  right: 60px;
 }
 h3 {
   padding: 20px;
@@ -237,6 +243,10 @@ h3 {
 }
 canvas {
   padding: 20px;
+  line-height: 2;
+}
+.barchart canvas {
+  padding-right: 40px;
 }
 
 @media (max-width: 768px) {
