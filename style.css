@@ -1,7 +1,7 @@
 * {
- padding: 0;
- margin: 0;
- box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: #6cb2eb;
@@ -10,7 +10,7 @@ body {
   display: grid;
   grid-template-columns: 10% 90%;
   gap: 40px;
-  overflow:hidden;
+  overflow: hidden;
 }
 .section1 {
   grid-template-columns: 10%;
@@ -20,7 +20,6 @@ body {
   grid-template-columns: 90%;
   margin-left: 20px;
   margin-bottom: 20px;
-  
 }
 /* navbar style */
 .nav-ul {
@@ -35,10 +34,15 @@ a {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  background-image:linear-gradient(to right, rgb(207, 7, 94),rgb(235, 29, 43), rgba(235, 89, 22, 0.863));
+  background-image: linear-gradient(
+    to right,
+    rgb(207, 7, 94),
+    rgb(235, 29, 43),
+    rgba(235, 89, 22, 0.863)
+  );
   width: 100%;
   padding-left: 20px;
-} 
+}
 .left-nav {
   position: relative;
   display: flex;
@@ -50,11 +54,11 @@ a {
   border-radius: 25px;
   margin: 5px;
   border: none;
-  padding-left: 12px; 
+  padding-left: 12px;
 }
 .search::placeholder {
   font-size: 12px;
-  padding: 5px
+  padding: 5px;
 }
 .left-nav i {
   position: absolute;
@@ -69,7 +73,8 @@ a {
   justify-content: space-around;
   margin: 20px;
 }
-.right-nav i, .right-nav img{
+.right-nav i,
+.right-nav img {
   padding: 6px;
 }
 .images {
@@ -83,7 +88,7 @@ a {
   display: flex;
   padding: 10px;
   border-radius: 4px;
-  color:#fff;
+  color: #fff;
   border: 2px solid white;
 }
 /* side navbar style */
@@ -122,8 +127,8 @@ h4 {
   padding-left: 35px;
   background: rgba(17, 16, 16, 0.596);
   color: #eee;
-  border-top: 1px solid rgba(255,255,255, 0.05);
-  border-bottom: 2px solid black
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid black;
 }
 .nav-ul li a {
   color: #eee;
@@ -136,7 +141,7 @@ h4 {
   color: #eee;
   cursor: pointer;
 }
-.right  {
+.right {
   position: absolute;
   right: 15px;
   top: 35%;
@@ -146,14 +151,14 @@ h4 {
   transition: 0.5s;
 }
 
-ul #subMenu1, 
+ul #subMenu1,
 ul #subMenu2,
-ul #subMenu3, 
+ul #subMenu3,
 ul #subMenu4,
 ul #subMenu5,
 ul #subMenu6 {
   display: none;
-  cursor:pointer;
+  cursor: pointer;
   background: rgb(31, 30, 30);
 }
 
@@ -166,19 +171,27 @@ ul #subMenu6 {
 .orders {
   display: flex;
   position: relative;
-  background-image: linear-gradient(to top right, rgb(29,221,217), rgb(87, 131, 232));
+  background-image: linear-gradient(
+    to top right,
+    rgb(29, 221, 217),
+    rgb(87, 131, 232)
+  );
   margin-left: 0px;
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 0px;
   padding: 20px;
-   border-radius: 8px;
+  border-radius: 8px;
   box-shadow: 0px 0px 1px;
 }
 .expenses {
   display: flex;
   position: relative;
-  background-image: linear-gradient(to top right, rgb(246, 85, 156), rgb(253,112,122));
+  background-image: linear-gradient(
+    to top right,
+    rgb(246, 85, 156),
+    rgb(253, 112, 122)
+  );
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 0px;
@@ -189,10 +202,14 @@ ul #subMenu6 {
 .revenue {
   display: flex;
   position: relative;
-  background-image: linear-gradient(to top right, rgb(65, 225,151), rgb(59,181,179));
+  background-image: linear-gradient(
+    to top right,
+    rgb(65, 225, 151),
+    rgb(59, 181, 179)
+  );
   margin-top: 20px;
   margin-right: 20px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 1px;
@@ -200,7 +217,11 @@ ul #subMenu6 {
 .user {
   display: flex;
   position: relative;
-  background-image: linear-gradient(to top right, rgb(255,206,66), rgb(255,140,85));
+  background-image: linear-gradient(
+    to top right,
+    rgb(255, 206, 66),
+    rgb(255, 140, 85)
+  );
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 0px;
@@ -216,10 +237,11 @@ ul #subMenu6 {
 }
 
 .col {
-   position: relative;
+  position: relative;
 }
 
-.linechart, .barchart {
+.linechart,
+.barchart {
   background-color: #fff;
   box-shadow: 3px 3px 7px;
   border-radius: 6px;
@@ -231,7 +253,7 @@ ul #subMenu6 {
   top: 60px;
   right: 40px;
 }
- .barchart i {
+.barchart i {
   position: absolute;
   top: 60px;
   right: 60px;
@@ -251,104 +273,105 @@ canvas {
 
 @media (max-width: 768px) {
   .container-fluid {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  gap: 30px;
-}
-.section1 {
-  grid-template-columns: 20%;
-  margin-right: 20px;
-}
-.nav-container {
-  display: none;
-  width: 180px;
-  background: #1b1b1b;
-  height: 100vh;
-  transition: all 0.5s ease-in-out;
-  position: fixed;
-  line-height: 40px;
-}
-.section2 {
-  grid-template-columns: 80%;
-  /* margin-left: 40px; */
-}
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 30px;
+  }
+  .section1 {
+    grid-template-columns: 20%;
+    margin-right: 20px;
+  }
+  .nav-container {
+    display: none;
+    width: 180px;
+    background: #1b1b1b;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    line-height: 40px;
+  }
+  .section2 {
+    grid-template-columns: 80%;
+    /* margin-left: 40px; */
+  }
 
-.search {
-  width: 80%;
-  border-radius: 25px;
-  margin: 5px;
-  border: none;
-  padding-left: 12px; 
-}
-.left-nav i {
-  position: absolute;
-  font-size: 10px;
-  color: rgb(153, 150, 150);
-  top: 20px;
-  right: 75px;
-}
+  .search {
+    width: 80%;
+    border-radius: 25px;
+    margin: 5px;
+    border: none;
+    padding-left: 12px;
+  }
+  .left-nav i {
+    position: absolute;
+    font-size: 10px;
+    color: rgb(153, 150, 150);
+    top: 20px;
+    right: 75px;
+  }
   .cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-right: 20px;
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 568px) {
   .container-fluid {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  gap: 40px;
-}
-.nav-container {
-  display: none;
-  width: 150px;
-  background: #1b1b1b;
-  height: 100vh;
-  transition: all 0.5s ease-in-out;
-  position: fixed;
-  line-height: 40px;
-}
-.section1 {
-  grid-template-columns: 20%;
-  margin-right: 20px;
-}
-.section2 {
-  grid-template-columns: 80%;
-  padding-left: 20px;
-}
-.navbar {
-  padding-right: 20px;
-}
-.search {
-  width: 100%;
-  border-radius: 25px;
-  margin: 5px;
-  border: none;
-  padding-left: 8px; 
-  margin-right: 10px;
-}
-.left-nav i {
-  position: absolute;
-  font-size: 10px;
-  color: rgb(153, 150, 150);
-  top: 20px;
-  right: 10px;
-}
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 40px;
+  }
+  .nav-container {
+    display: none;
+    width: 150px;
+    background: #1b1b1b;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    line-height: 40px;
+  }
+  .section1 {
+    grid-template-columns: 20%;
+    margin-right: 20px;
+  }
+  .section2 {
+    grid-template-columns: 80%;
+    padding-left: 20px;
+  }
+  .navbar {
+    padding-right: 20px;
+  }
+  .search {
+    width: 100%;
+    border-radius: 25px;
+    margin: 5px;
+    border: none;
+    padding-left: 8px;
+    margin-right: 10px;
+  }
+  .left-nav i {
+    position: absolute;
+    font-size: 10px;
+    color: rgb(153, 150, 150);
+    top: 20px;
+    right: 10px;
+  }
 
   .cards {
-  display: grid;
-  grid-template-columns: 100%;
-  margin-right: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-right: 20px;
   }
   .row {
     width: 100%;
   }
-  .linechart, .barchart {
+  .linechart,
+  .barchart {
     margin-right: 20px;
-
   }
-  .barchart h3, .linechart h3 {
+  .barchart h3,
+  .linechart h3 {
     font-size: 14px;
   }
 }
