@@ -26,19 +26,19 @@ let menu6 = document.querySelector('#subMenu6');
 let arrow1 = document.querySelector('#downArrow');
 let arrow2 = document.querySelector('#leftArrow1');
 
-toggle1.addEventListener('click', ()=> {
-  if(menu1.style.display === 'block' 
-  || menu2.style.display === 'block' 
-  || menu3.style.display === 'block') {
+arrow1.addEventListener('click', ()=> {
+  if( menu1.style.display === 'none'
+    || menu2.style.display === 'none'
+    || menu3.style.display === 'none') {
+    menu1.style.display === 'block'; 
+    menu2.style.display === 'block'; 
+    menu3.style.display === 'block';
+    // arrow1.style.transform = 'rotate(0deg)';
+  }
+  else {
     menu1.style.display === 'none';
     menu2.style.display === 'none';
     menu3.style.display === 'none';
-    arrow1.style.transform = 'rotate(0deg)';
-  }
-  else {
-    menu1.style.display === 'block';
-    menu2.style.display === 'block';
-    menu3.style.display === 'block';
   }
 });
 
