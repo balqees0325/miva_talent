@@ -278,6 +278,7 @@ iframe {
 }
 .play {
   display: flex;
+  width: 80%;
 }
 .play:not(last-child){
   margin: .1rem;
@@ -285,9 +286,13 @@ iframe {
 .list {
   position: relative;
   margin-right: .4rem;
+  width: 200px;
+  height: 109px;
 }
 .list a img{
 object-fit: cover;
+width:100%;
+height: 100%;
 }
 /* duration style */
 .thumbnail {
